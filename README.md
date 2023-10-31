@@ -1,6 +1,6 @@
 # Réplica do Pinterest
 
-Olá pessoal! Estou muito animado para mostrar minha réplica do Pinterest e explicar como eu a criei. A ideia aqui é tornar isso super fácil de entender, como se estivéssemos conversando.
+Olá pessoal! Estou muito animado para mostrar minha réplica do Pinterest e explicar como eu a criei. A ideia aqui é tornar isso super fácil de entender, como se estivéssemos conversando numa mesa frente a frente.
 
 ## O que é o Pinterest?
 
@@ -8,7 +8,7 @@ O Pinterest é como um grande mural de fotos, onde as pessoas compartilham image
 
 ## Como eu fiz isso?
 
-Para construir minha réplica do Pinterest, usei uma linguagem de programação chamada Python e um framework chamado Flask. É como usar ferramentas de construção para fazer uma casa, mas no mundo virtual.
+Para construir minha réplica do Pinterest, usei a lnguagem de programação Python e um framework chamado Flask. É como se estivesse usando ferramentas de construção para fazer uma casa, mas no mundo virtual.
 
 ## Funcionalidades
 
@@ -16,11 +16,15 @@ Para construir minha réplica do Pinterest, usei uma linguagem de programação 
 
 #### Página de Login
 
+![Screenshot_54](https://github.com/Schambin/PinFake/assets/118319638/abe587ee-d3d0-413e-95c5-61c404fd3501)
+
 Quando você acessa minha réplica, a primeira coisa que vê é a página de login. É como a porta da sua casa. Você precisa digitar seu nome de usuário (ou email) e senha para entrar. Isso mantém sua conta segura.
 
 #### Página de Cadastro
 
 Se você ainda não tem uma conta, não tem problema! Clique em "Cadastrar" e você pode criar sua própria conta. É como construir seu próprio quarto no Pinterest.
+
+![Screenshot_55](https://github.com/Schambin/PinFake/assets/118319638/6a39e92a-82d9-45d0-bd12-3ac07869e00f)
 
 ### Feed de Imagens
 
@@ -31,6 +35,8 @@ Assim que você entrar, verá um monte de fotos legais no seu feed. É como se f
 #### Publicar Imagens
 
 Aqui está a parte legal. Você também pode compartilhar suas próprias imagens no Pinterest. E não só isso, você pode compartilhar imagens no formato PNG, que é um tipo de arquivo de imagem. É como pendurar seu próprio quadro na parede!
+
+![Screenshot_59](https://github.com/Schambin/PinFake/assets/118319638/1b7dfa2f-0945-45af-b0f5-4a3028d3d16d)
 
 ### Perfil Pessoal
 
