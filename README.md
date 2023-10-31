@@ -16,7 +16,7 @@ Para construir minha réplica do Pinterest, usei a lnguagem de programação Pyt
 
 #### Página de Login
 
-![Screenshot_54](https://github.com/Schambin/PinFake/assets/118319638/abe587ee-d3d0-413e-95c5-61c404fd3501)
+![Screenshot_54](https://github.com/Schambin/PinFake/assets/118319638/f6e1e6f8-c1b7-4207-978e-fde69ff83083)
 
 Quando você acessa minha réplica, a primeira coisa que vê é a página de login. É como a porta da sua casa. Você precisa digitar seu nome de usuário (ou email) e senha para entrar. Isso mantém sua conta segura.
 
@@ -24,7 +24,7 @@ Quando você acessa minha réplica, a primeira coisa que vê é a página de log
 
 Se você ainda não tem uma conta, não tem problema! Clique em "Cadastrar" e você pode criar sua própria conta. É como construir seu próprio quarto no Pinterest.
 
-![Screenshot_55](https://github.com/Schambin/PinFake/assets/118319638/6a39e92a-82d9-45d0-bd12-3ac07869e00f)
+![Screenshot_55](https://github.com/Schambin/PinFake/assets/118319638/405cc37f-61ed-4ec0-a37c-7c604ce9a43f)
 
 ### Feed de Imagens
 
@@ -36,7 +36,7 @@ Assim que você entrar, verá um monte de fotos legais no seu feed. É como se f
 
 Aqui está a parte legal. Você também pode compartilhar suas próprias imagens no Pinterest. E não só isso, você pode compartilhar imagens no formato PNG, que é um tipo de arquivo de imagem. É como pendurar seu próprio quadro na parede!
 
-![Screenshot_59](https://github.com/Schambin/PinFake/assets/118319638/1b7dfa2f-0945-45af-b0f5-4a3028d3d16d)
+![Screenshot_59](https://github.com/Schambin/PinFake/assets/118319638/7ed6293a-30a7-402a-ad1a-f58b4b47f59e)
 
 ### Perfil Pessoal
 
