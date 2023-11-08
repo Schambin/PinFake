@@ -5,7 +5,7 @@ from flask_bcrypt import Bcrypt
 import os
 
 app = Flask(__name__)  #criar app flask com o nome da pasta atual
-app.config["SQLALCHEMY_DATABASE_URI"] = os.getenv("postgresql://banco_pinfake_user:1W0EMERyk0EEoXwVUvighK9UYOgZUUSO@dpg-cl5orkk72pts73eqem80-a/banco_pinfake")
+app.config["SQLALCHEMY_DATABASE_URI"] = os.getenv("DATABASE_URL")
 app.config["SECRET_KEY"] = "2720af2a2150f857eabd221fb77575c135eb953f"
 app.config["UPLOAD_FOLDER"] = os.path.join(os.path.abspath(os.path.dirname(__file__)), "fotos_posts")
 
