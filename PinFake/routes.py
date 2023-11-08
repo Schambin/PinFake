@@ -1,5 +1,5 @@
 # ROTAS do site, tb chamado de views para django
-from flask import render_template, url_for, redirect
+from flask import render_template, url_for, redirect, send_from_directory
 from PinFake import app, database, bcrypt
 from PinFake.models import Usuario, Foto
 from flask_login import login_required, login_user, logout_user, current_user
@@ -21,7 +21,7 @@ def homepage():
 def criar_conta():
     form_criarconta = FormCriarConta()
     if form_criarconta.validate_on_submit():
-        senha = bcrypt.generate_password_hash(form_criarconta.senha.data)
+        senha = bcrypt.generate_password_hash(form_criarconta.senha.data).decode("utf-8")
         usuario = Usuario(username=form_criarconta.username.data, email=form_criarconta.email.data, senha=senha)
         database.session.add(usuario)
         database.session.commit()
@@ -32,19 +32,23 @@ def criar_conta():
 @app.route("/perfil/<id_usuario>", methods=["GET", "POST"])
 @login_required
 def perfil(id_usuario):
-    usuario = Usuario.query.get(int(id_usuario))
     if int(id_usuario) == int(current_user.id):
+        # o usuario ta vendo o perfil dele
         form_foto = FormFoto()
         if form_foto.validate_on_submit():
             arquivo = form_foto.foto.data
             nome_seguro = secure_filename(arquivo.filename)
-            caminho = os.path.join(os.path.abspath(os.path.dirname(__file__)), app.config["UPLOAD_FOLDER"], nome_seguro)
+            # salvar o arquivo dentro da pasta certa
+            caminho = os.path.join(app.config["UPLOAD_FOLDER"], nome_seguro)
+            arquivo.save(caminho)
+            # criar a foto no banco com o item "imagem" sendo o nome do arqivo
             foto = Foto(imagem=nome_seguro, id_usuario=current_user.id)
             database.session.add(foto)
             database.session.commit()
-        return render_template("perfil.html", nome_usuario=current_user.username, form=form_foto, usuario=usuario)
+        return render_template("perfil.html", usuario=current_user, form=form_foto)
     else:
-        return render_template("perfil.html", nome_usuario=usuario.username, form=None, usuario=usuario)
+        usuario = Usuario.query.get(int(id_usuario))
+        return render_template("perfil.html", usuario=usuario, form=None)
 
 
 @app.route("/logout")
